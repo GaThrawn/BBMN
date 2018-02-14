@@ -129,7 +129,7 @@ jQuery(document).ready(function($) {
     // build scene
     var scene = new ScrollMagic.Scene({triggerElement: "#contacttriggercd", duration: 100, offset: 75})
                     .setTween(tween)
-                    .addIndicators({name: "contacttriggercd"}) // add indicators (requires plugin)
+                    //.addIndicators({name: "contacttriggercd"}) // add indicators (requires plugin)
                     .addTo(controller);
  
     var tween = TweenMax.staggerFromTo("#frontcontactcb", 2, {x: 0, y: 150, skewX:"30deg", scaleX:0.8}, {x: 0, y: 0, skewX:"0deg", scaleX:1.0, ease: Back.easeOut}, 0.15);
@@ -137,7 +137,7 @@ jQuery(document).ready(function($) {
     // build scene
     var scene = new ScrollMagic.Scene({triggerElement: "#contacttriggercb", duration: 100, offset: 75})
                     .setTween(tween)
-                    .addIndicators({name: "contacttriggercb"}) // add indicators (requires plugin)
+                    //.addIndicators({name: "contacttriggercb"}) // add indicators (requires plugin)
                     .addTo(controller); 
 
     var tween = TweenMax.staggerFromTo("#footerquote", 2, {x: 0, y: 150, skewX:"30deg", scaleX:0.8}, {x: 0, y: 0, skewX:"0deg", scaleX:1.0, ease: Back.easeOut}, 0.15);

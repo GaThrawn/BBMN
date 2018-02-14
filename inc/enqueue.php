@@ -19,11 +19,10 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
         wp_enqueue_script( 'greensockcss', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js', array(), null, true );
         wp_enqueue_script( 'greensockep', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js', array(), null, true );
         wp_enqueue_script( 'greensocktl', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js', array(), null, true );
+        wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js',array(), false, false );
         
         //Scrollmagic Stuff
-        wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js',array(), false, false );
         wp_enqueue_script( 'scrollmagic-js', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js', array(), false, false );      
-//         wp_enqueue_script( 'scrollmagic-js', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js', array(), false, false );
         wp_enqueue_script( 'smmin', get_template_directory_uri() . '/js/ScrollMagic.min.js', array('jquery'), null, false);
         wp_enqueue_script( 'smanim', get_template_directory_uri() . '/js/animation.gsap.min.js', array('jquery'), null, false);
         wp_enqueue_script( 'smanimvel', get_template_directory_uri() . '/js/animation.velocity.min.js', array('jquery'), null, false);
@@ -41,9 +40,7 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
         wp_enqueue_script( 'pixels', get_template_directory_uri() . '/js/pixels.js', array('jquery'), false);
         
         wp_enqueue_script( 'stickscroll', get_template_directory_uri() . '/js/stickscroll.js', array('jquery'), false);
-        //My Custom CSS scripts
-        // wp_enqueue_script( 'fonts', 'https://fonts.googleapis.com/css?family=Anton|Francois+One|Work+Sans', array(), false, false );
-       
+        
 
         
         wp_enqueue_style( 'understrap-styles', get_stylesheet_directory_uri() . '/css/theme.min.css', array(), $the_theme->get( 'Version' ) );
